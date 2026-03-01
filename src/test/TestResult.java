@@ -5,8 +5,11 @@ import domain.Exercise;
 public class TestResult {
 
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        int[] milit_numbs = new int[100000];
+        for(int i = 0; i < milit_numbs.length; i++){
+            milit_numbs[i] = i;
+        }
+        
+        System.out.println("Кількість підрозділів, що містять числа = " + Exercise.Calculate(milit_numbs));
     }
 }
