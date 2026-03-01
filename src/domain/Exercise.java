@@ -1,15 +1,28 @@
 package domain;
 
 public class Exercise {
-    public static int Calculate(int [] milit_numbs){
-        int counter = 0;        
-        for(int i = 0; i < 100000; i++){
-            String numb = Integer.toString(i);
-            if(numb.contains("4") || numb.contains("13")){
-                counter++;
+    public static float Calculate(String expression) {
+        
+    String[] tokens = expression.split(" ");
+            if (tokens.length == 0) return 0;
+
+            float result = Float.parseFloat(tokens[0]);
+
+            for (int i = 1; i < tokens.length; i += 2) {
+                String operator = tokens[i];
+                float number = Float.parseFloat(tokens[i + 1]);
+
+                switch (operator) {
+                    case "+": result += number; break;
+                    case "-": result -= number; break;
+                    case "*": result *= number; break;
+                    case "/": result /= number; break;
+                    default:
+                        System.out.println("Невідомий оператор: " + operator);
+                }
             }
+
+            return result;
         }
-        return counter;
     }
-}
 
