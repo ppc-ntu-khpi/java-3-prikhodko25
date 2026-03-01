@@ -6,7 +6,9 @@ public class TestResult {
 
     public static void main(String[] args) {
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+            String expr = "1 + 33 - 4 * 7";
+            float value = Exercise.Calculate(expr);
+        
+            System.out.println("Результат виразу \"" + expr + "\" = " + value);
     }
 }
