@@ -1,4 +1,5 @@
-# Завдання
+# Звіт
+## Завдання
 5. Рядок містить математичний вираз типу "1 + 33-4 * 7". Написати програму для підрахунку значення виразу (пріоритет операцій можна не враховувати)
 ## Exercise
 
@@ -50,4 +51,4 @@ public class TestResult {
 ```
 ## Результат 
 
-![alt text](https://github.com/ppc-ntu-khpi/java-3-AlexRubanUa/blob/master/imageResult "Logo Title Text 1")
+![alt text](https://github.com/ppc-ntu-khpi/java-3-prikhodko25/blob/master/src/1.png)
